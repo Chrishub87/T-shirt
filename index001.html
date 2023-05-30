@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="T-shirt Order" content="width=device-width">
+    <title>Cristian T-shirt </title>
+</head>
+<body>
+    <h1>Cristian T-shirt Ordering Form</h1>
+
+    <form method="post" action="https://form-reader.netlify.app/.netlify/functions/formReader">
+        <fieldset>
+            <legend>User Details</legend>
+        <!--Theese are the titles-->>
+        <label for="title">Title:</label>
+        <select id="title" name="title" required>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!--name input-->>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!--email input-->>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!--adddress input-->>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>T-shirt Details</legend>
+        <!--Theese are the Sizes-->>
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+            <option value="xs">XS.</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+        </select>
+
+        <!--Theese are the genders-->>
+        <label for="gender">Gender:</label>
+
+        <input type="radio" id="male" name="gender" value="m" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="f" required>
+        <label for="female">Female</label>
+
+        <!--Chooses the Patterns-->>
+        <label for="patterns">Patterns:</label>
+        <input type="checkbox" id="back-print" name="patterns" value="back print" required>
+        <label for="back-print">Back Print</label>
+        <input type="checkbox" id="front-print" name="patterns" value="front print" required>
+        <label for="front-print">Front Print</label>
+        <input type="checkbox" id="details" name="patterns" value="details" required>
+        <label for="details">Details</label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
